@@ -21,13 +21,6 @@ pipeline{
     			bat "dotnet build JenkinsConsoleApp.sln --configuration Release"
     		}
     	}
-
-    	stage('Publish') {
-    		steps {
-    			echo 'PUBLISHING'
-    			bat "dotnet publish JenkinsConsoleApp.sln"
-    		}
-    	}
     }
 
     post {

@@ -10,19 +10,19 @@ pipeline{
 
     	stage('Clean') {
     		steps {
-    			bat "dotnet clean \\JenkinsConsoleApp.sln"
+    			bat "dotnet clean JenkinsConsoleApp.sln"
 			}
     	}
 
     	stage('Build') {
     		steps {
-    			bar "dotnet build \\JenkinsConsoleApp.sln --configuration Release"
+    			bar "dotnet build JenkinsConsoleApp.sln --configuration Release"
     		}
     	}
 
     	stage('Publish') {
     		steps {
-    			bar "dotnet publish \\JenkinsConsoleApp.sln"
+    			bar "dotnet publish JenkinsConsoleApp.sln"
     		}
     	}
     }

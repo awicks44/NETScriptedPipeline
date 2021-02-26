@@ -1,0 +1,44 @@
+pipeline{
+    agent any
+    
+    environment {
+        dotnet ='C:\\Program Files (x86)\\dotnet\\'
+        }
+        
+    triggers {
+        pollSCM 'H * * * *'
+    }
+
+    stages {
+    	stage('Checkout') {
+    		steps {
+    			git credentialsId: '30ea8398-b185-414a-9429-6075ce56bab7', url: 'git@github.com:awicks44/NETScriptedPipeline.git'
+    		}    		
+    	}
+
+    	stage('Clean') {
+    		steps {
+    			bat "dotnet clean \\JenkinsConsoleApp.sln"
+			}
+    	}
+
+    	stage('Build') {
+    		steps {
+    			bar "dotnet build \\JenkinsConsoleApp.sln --configuration Release"
+    		}
+    	}
+
+    	stage('Publish') {
+    		steps {
+    			bar "dotnet publish \\JenkinsConsoleApp.sln"
+    		}
+    	}
+    }
+
+    post {
+		success {
+			echo 'Successful Build'
+		}
+	}
+    
+ }

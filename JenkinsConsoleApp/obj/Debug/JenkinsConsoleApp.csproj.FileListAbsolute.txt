@@ -1,0 +1,6 @@
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\bin\Debug\JenkinsConsoleApp.exe.config
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\bin\Debug\JenkinsConsoleApp.exe
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\bin\Debug\JenkinsConsoleApp.pdb
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\obj\Debug\JenkinsConsoleApp.exe
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\obj\Debug\JenkinsConsoleApp.pdb
+C:\Users\awix1\source\repos\JenkinsConsoleApp\JenkinsConsoleApp\obj\Debug\JenkinsConsoleApp.csprojResolveAssemblyReference.cache

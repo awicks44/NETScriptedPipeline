@@ -4,7 +4,7 @@ pipeline{
     stages {
     	stage('Checkout') {
     		steps {
-    			git branch: 'main' credentialsId: '30ea8398-b185-414a-9429-6075ce56bab7', url: 'git@github.com:awicks44/NETScriptedPipeline.git'
+    			git credentialsId: '30ea8398-b185-414a-9429-6075ce56bab7', url: 'git@github.com:awicks44/NETScriptedPipeline.git'
     		}    		
     	}
 
